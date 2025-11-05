@@ -1,63 +1,61 @@
---> --> --> Chaveiro Inteligente com Reprodução de Áudio e Exibição de Logo
+🧠🔊 Chaveiro Inteligente com Reprodução de Áudio e Exibição de Logo
 
---> --> Este projeto consiste em um chaveiro inteligente que, ao ser acionado por um botão, reproduz o hino do São Paulo e exibe a logo do time em um display OLED. Desenvolvido com um microcontrolador Raspberry Pi Pico W, o sistema combina técnicas de sistemas embarcados, como PWM para reprodução de áudio e comunicação I2C para controle do display.
+Este projeto consiste em um chaveiro inteligente que, ao ser acionado por um botão, reproduz o hino do São Paulo Futebol Clube e exibe o logo do time em um display OLED.
+Desenvolvido com o microcontrolador Raspberry Pi Pico W, o sistema combina técnicas de sistemas embarcados, como PWM para reprodução de áudio e I2C para controle do display.
 
---> --> --> Funcionalidades:
+⚙️ Funcionalidades
 
---> Reprodução de Áudio: O hino do São Paulo é reproduzido através de um buzzer, utilizando PWM para gerar as frequências das notas musicais.
+Reprodução de Áudio: o hino do São Paulo é reproduzido através de um buzzer, utilizando PWM para gerar as frequências das notas musicais.
 
---> Exibição de Logo: A logo do São Paulo é exibida em um display OLED de 128x64 pixels.
+Exibição de Logo: a logo do São Paulo é exibida em um display OLED 128x64 pixels.
 
---> Multicore: O projeto utiliza os dois núcleos do Raspberry Pi Pico W, permitindo que a música seja tocada no Core 1 enquanto o Core 0 gerencia a exibição da logo e a leitura do botão.
+Multicore: o projeto utiliza os dois núcleos do Raspberry Pi Pico W, permitindo que a música seja tocada no Core 1, enquanto o Core 0 gerencia a exibição da logo e a leitura do botão.
 
---> Portabilidade: O sistema é alimentado por bateria, tornando-o portátil e ideal para uso como chaveiro.
+Portabilidade: o sistema é alimentado por bateria, tornando-o portátil e ideal para uso como chaveiro.
 
---> --> --> Componentes Utilizados:
+🧩 Componentes Utilizados
 
---> Microcontrolador: Raspberry Pi Pico W.
+Microcontrolador: Raspberry Pi Pico W
 
---> Display: OLED 128x64 (comunicação I2C).
+Display: OLED 128x64 (comunicação I2C)
 
---> Buzzer: Para reprodução do áudio.
+Buzzer: para reprodução do áudio
 
---> Botão: Para acionar o sistema.
+Botão: para acionar o sistema
 
---> Bateria: Para alimentação do circuito.
+Bateria: para alimentação do circuito
 
---> --> --> Como Funciona:
+🧠 Como Funciona
 
---> Ao pressionar o botão, o sistema detecta o acionamento e inicia a reprodução do hino.
+Ao pressionar o botão, o sistema detecta o acionamento e inicia a reprodução do hino.
 
---> Simultaneamente, a logo do São Paulo é exibida no display OLED.
+Simultaneamente, a logo do São Paulo é exibida no display OLED.
 
---> O hino é reproduzido utilizando PWM para gerar as frequências das notas.
+O hino é reproduzido utilizando PWM para gerar as frequências correspondentes às notas musicais.
 
---> Após a reprodução, o sistema retorna ao estado inicial, aguardando um novo acionamento.
+Após a reprodução, o sistema retorna ao estado inicial, aguardando um novo acionamento.
 
---> --> --> Montagem do Circuito:
+🔌 Montagem do Circuito
+Componente	Pino do Pico W	Função
+Buzzer	GP21	Saída PWM (áudio)
+Botão	GP6	Entrada digital com pull-up
+Display OLED	GP14 (SDA), GP15 (SCL)	Comunicação I2C
+🎥 Vídeo de Demonstração
 
---> Buzzer: Conectado ao pino GP21 (saída PWM).
+📺 Assista ao vídeo no YouTube
+ <!-- Substitua o "#" pelo link real -->
 
---> Botão: Conectado ao pino GP6 (entrada digital com pull-up).
+🤝 Contribuições
 
---> Display OLED: Conectado aos pinos GP14 (SDA) e GP15 (SCL) via I2C.
+Contribuições são bem-vindas!
+Sinta-se à vontade para abrir issues ou enviar pull requests com sugestões e melhorias.
 
+🪪 Licença
 
---> --> --> Vídeo de Demonstração:
+Este projeto está licenciado sob a Licença MIT
+.
 
---> --> Link para o vídeo no YouTube
+👨‍💻 Autor
 
-
---> --> --> Contribuições:
-
---> --> Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
-
---> --> --> Licença:
-
---> --> Este projeto está licenciado sob a Licença MIT.
-
---> --> --> Autor:
-
---> [João Nogueira]
-
---> [(https://www.linkedin.com/in/jo%C3%A3o-nogueira-5898902b2/)].
+João Nogueira
+🔗 LinkedIn
